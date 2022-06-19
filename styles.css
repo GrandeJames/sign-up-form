@@ -1,5 +1,47 @@
 :root {
+    box-sizing: border-box;
+}
+
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+aside {
+    height: 100vh;
+    width: 30vw;
+    background-image: url("./images/diego-ph-5LOhydOtTKU-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+}
+
+.title {
+    background-color: rgba(0, 0, 0, 10%);
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 25vh;
+    padding: 20px 0;
+}
+
+.title-heading {
+    font-size: 3rem;
+}
+
+.credit--photo {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 10px;
+    font-size: 0.75rem;
+}
+
+aside a {
+    color: lightgray;
 }
