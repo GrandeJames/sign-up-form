@@ -18,7 +18,7 @@ body {
 
 aside {
     height: 100vh;
-    width: 700px;
+    width: 35vw;
     background-image: url("./images/diego-ph-5LOhydOtTKU-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,12 +27,19 @@ aside {
 }
 
 .title {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
     background-color: rgba(0, 0, 0, 10%);
     width: 100%;
-    text-align: center;
     position: absolute;
     top: 25vh;
     padding: 20px 0;
+}
+
+.title-logo {
+    width: 50px;
+    margin-right: 10px;
 }
 
 .title-heading {
@@ -55,13 +62,15 @@ aside a {
 
 main {
     background-color: rgb(250, 250, 250);
-    width: 100%;
+    width: 65vw;
+    height: 100vh;
+    overflow: auto;
 }
 
 .message {
     font-weight: 500;
-    width: 50ch;
     padding: 100px 50px 50px 50px;
+    width: min(90%, 50ch);
 }
 
 input {
@@ -94,6 +103,7 @@ input:focus {
 
 form section {
     background-color: #fff;
+    box-shadow: 0px 3px 3px 2px rgba(0, 0, 0, 10%);
     padding: 20px 50px;
     
 }
