@@ -60,7 +60,7 @@ main {
 .message {
     font-weight: 500;
     width: 50ch;
-    padding: 100px 50px 70px 50px;
+    padding: 100px 50px 50px 50px;
 }
 
 input {
@@ -122,4 +122,27 @@ label {
 
 .form-login {
     margin: 0 50px;
+}
+
+input + span {
+    position: relative;
+}
+
+input:required + span::before {
+    content: "required";
+    position: absolute;
+    top: -50px;
+    left: 190px;
+    font-size: 0.7rem;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    padding: 1px 5px;
+}
+
+input[type="password"]:invalid:focus + span::after {
+    position: absolute;
+    content: "Your password must have at least 8 characters";
+    font-size: 0.7rem;
+    color: red;
 }
