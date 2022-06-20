@@ -144,6 +144,10 @@ input:invalid:focus + span::after {
     width: 300px;
 }
 
+input[type="text"]:invalid:focus + span::after {
+    content: "Please enter a name.";
+}
+
 input[type="password"]:invalid:focus + span::after {
     content: "Your password must have at least 8 characters";
 }
