@@ -41,8 +41,8 @@
         <section class="form-main">
           <h2 class="form-heading">Let's do this!</h2>
 
-          <div class="form-inputs">
-            <div class="form-row">
+          <div class="form-inputs-container">
+            <div class="form-input-container">
               <label for="first-name">First Name</label>
               <input
                 type="text"
@@ -53,7 +53,7 @@
               />
               <span></span>
             </div>
-            <div class="form-row">
+            <div class="form-input-container">
               <label for="last-name">Last Name</label>
               <input
                 type="text"
@@ -64,12 +64,12 @@
               />
               <span></span>
             </div>
-            <div class="form-row">
+            <div class="form-input-container">
               <label for="email">Email</label>
               <input type="email" id="email" name="email" required />
               <span></span>
             </div>
-            <div class="form-row">
+            <div class="form-input-container">
               <label for="phone-number">Phone Number</label>
               <input
                 type="tel"
@@ -80,7 +80,7 @@
               />
               <span></span>
             </div>
-            <div class="form-row">
+            <div class="form-input-container">
               <label for="password">Password</label>
               <input
                 type="password"
@@ -91,7 +91,7 @@
               />
               <span></span>
             </div>
-            <div class="form-row">
+            <div class="form-input-container">
               <label for="confirm-password">Confirm Password</label>
               <input
                 type="password"
@@ -105,14 +105,17 @@
           </div>
         </section>
 
-        <button type="submit" class="form-create-account-button">
-          Create Account
-        </button>
-        <p class="login">
-          Already have an account?
-          <a href="" class="login-link">Log in</a>
-        </p>
+        <div>
+          <button type="submit" class="form-create-account-button">
+            Create Account
+          </button>
+        </div>
       </form>
+
+      <p class="login">
+        Already have an account?
+        <a href="" class="login-link">Log in</a>
+      </p>
     </main>
   </body>
 </html>
