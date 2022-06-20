@@ -3,6 +3,7 @@
 :root {
     box-sizing: border-box;
     --color-accent: #C74E45;
+    --color-shade: rgba(0, 0, 0, 10%); 
 }
 
 * {
@@ -12,25 +13,23 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 16px;
     display: flex;
 }
 
 aside {
+    position: relative;
     height: 100vh;
     width: 35vw;
-    background-image: url("./images/diego-ph-5LOhydOtTKU-unsplash.jpg");
+    background: url(./images/diego-ph-5LOhydOtTKU-unsplash.jpg) no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
     color: #fff;
-    position: relative;
 }
 
 .title {
     display: flex;
     justify-content: center;
     flex-flow: wrap;
-    background-color: rgba(0, 0, 0, 10%);
+    background-color: var(--color-shade);
     width: 100%;
     position: absolute;
     top: 25vh;
@@ -59,7 +58,6 @@ aside {
     color: rgb(210, 210, 210);
 }
 
-
 main {
     background-color: rgb(250, 250, 250);
     width: 65vw;
@@ -82,28 +80,14 @@ input {
 }
 
 input:focus {
-    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 12%);
+    box-shadow: 2px 2px 3px 2px var(--color-shade);
     outline: none;
     border-color: rgb(0, 0, 255);
 }
 
-.form-create-account-button {
-    padding: 10px 45px;
-    background-color: var(--color-accent);
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-    margin: 20px 50px;
-}
-
-.form-create-account-button:hover {
-    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 12%);
-}
-
-form section {
+.form-main {
     background-color: #fff;
-    box-shadow: 0px 3px 3px 2px rgba(0, 0, 0, 10%);
+    box-shadow: 0px 3px 3px 2px var(--color-shade);
     padding: 20px 50px;
     
 }
@@ -119,7 +103,7 @@ form section {
     flex-flow: wrap;
 }
 
-.form-input {
+.form-row {
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -134,10 +118,6 @@ label {
     text-transform: uppercase;
     font-size: 0.75rem;
     font-weight: 500;
-}
-
-.form-login {
-    margin: 0 50px;
 }
 
 input + span {
@@ -176,7 +156,25 @@ input[type="tel"]:invalid:focus + span::after {
     content: "Please enter in a phone number. Ex: 123-456-7890";
 }
 
-.form-login--link {
+.form-create-account-button {
+    padding: 10px 45px;
+    background-color: var(--color-accent);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin: 20px 50px;
+}
+
+.form-create-account-button:hover {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 12%);
+}
+
+.login {
+    margin: 0 50px;
+}
+
+.login-link {
     text-decoration: none;
     color: var(--color-accent);
     font-weight: 600;
